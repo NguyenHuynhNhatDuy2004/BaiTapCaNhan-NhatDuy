@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050D1F"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_form"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="THÔNG TIN CHI TIẾT"
+            android:textColor="@color/text_white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView style="@style/DetailLabel" android:text="Họ và tên" />
+        <TextView android:id="@+id/tvName" style="@style/DetailValue" />
+
+        <TextView style="@style/DetailLabel" android:text="Email" />
+        <TextView android:id="@+id/tvEmail" style="@style/DetailValue" />
+
+        <TextView style="@style/DetailLabel" android:text="Số điện thoại" />
+        <TextView android:id="@+id/tvPhone" style="@style/DetailValue" />
+
+        <TextView style="@style/DetailLabel" android:text="Mã sinh viên" />
+        <TextView android:id="@+id/tvMsv" style="@style/DetailValue" />
+
+        <TextView style="@style/DetailLabel" android:text="Lớp" />
+        <TextView android:id="@+id/tvClass" style="@style/DetailValue" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/neon_green"
+            android:text="QUAY LẠI ĐĂNG KÝ"
+            android:textColor="@color/bg_dark"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
